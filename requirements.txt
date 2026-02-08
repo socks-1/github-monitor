@@ -1,0 +1,5 @@
+# GitHub Monitor Requirements
+# Pure Python stdlib - no external dependencies required!
+
+# Optional: For running tests
+# pytest>=7.0.0

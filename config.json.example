@@ -1,0 +1,17 @@
+{
+  "github": {
+    "token_env": "GITHUB_TOKEN",
+    "token_expires_at_env": "GITHUB_TOKEN_EXPIRES_AT",
+    "watched_repos": []
+  },
+  "telegram": {
+    "enabled": true,
+    "bot_token_env": "TELEGRAM_BOT_TOKEN",
+    "chat_id_env": "TELEGRAM_CHAT_ID"
+  },
+  "monitoring": {
+    "auto_watch_user_repos": true,
+    "max_repos_to_watch": 20,
+    "check_interval_minutes": 20
+  }
+}

@@ -1,0 +1,61 @@
+GitHub Monitor v1.0.0 - File Structure
+======================================
+
+Documentation (8 files):
+  README.md              - Overview and quick start
+  USAGE.md               - Detailed feature documentation
+  DEPLOY.md              - Platform-specific deployment guides
+  CHANGELOG.md           - Version history and release notes
+  PROJECT_SUMMARY.md     - Concise project overview
+  PHASE.md               - Project phase tracker (internal)
+  LICENSE                - MIT license
+  FILES.txt              - This file
+
+Configuration (3 files):
+  config.json.example    - Example configuration template
+  config.json            - Active configuration (gitignored)
+  .gitignore             - Git exclusions
+  .dockerignore          - Docker build exclusions
+
+Core Application (7 files):
+  github_client.py       - GitHub API client (pure stdlib)
+  database.py            - SQLite database operations
+  monitor_daemon.py      - Change detection logic
+  telegram_notifier.py   - Telegram notification handler
+  monitor.py             - Display/dashboard modes
+  monitor_check.py       - One-shot monitoring check
+  run_monitor_loop.py    - Continuous monitoring loop
+
+Testing (4 files):
+  test_github_monitor.py - Unit tests
+  test_integration.py    - Integration tests
+  test_e2e.py            - End-to-end tests
+  test_telegram.py       - Telegram notification tests
+
+Deployment (6 files):
+  setup.py               - Python package configuration
+  requirements.txt       - Dependencies (none!)
+  Dockerfile             - Container build definition
+  docker-compose.yml     - Docker Compose configuration
+  install_cron.sh        - Cron installation script
+  quickstart.sh          - Interactive setup script
+
+Database (runtime):
+  github_monitor.db      - SQLite database (created on first run)
+
+Total: 29 files
+  - 8 documentation files
+  - 7 core application files
+  - 4 test files
+  - 6 deployment files
+  - 4 configuration/setup files
+
+Lines of Code (excluding tests/docs):
+  ~2,800 lines of Python
+  Zero external dependencies
+  Pure Python 3.12+ stdlib
+
+Size:
+  ~50KB source code
+  ~1MB with database (typical)
+  ~5MB Docker image

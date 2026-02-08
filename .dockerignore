@@ -1,0 +1,36 @@
+# Git
+.git
+.gitignore
+
+# Python
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+
+# Database (will be mounted as volume)
+*.db
+*.db-journal
+
+# Tests
+test_*.py
+*_test.py
+
+# Documentation (not needed in runtime)
+*.md
+!README.md
+
+# Development files
+.vscode
+.idea
+*.swp
+*.swo
+*~
+
+# Local config
+config.json
+
+# Logs
+*.log
